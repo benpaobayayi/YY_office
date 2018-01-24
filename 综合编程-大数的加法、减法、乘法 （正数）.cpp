@@ -1,4 +1,4 @@
-//´óÊı¼Ó·¨¡¢¼õ·¨¡¢³Ë·¨ £¨ÕıÊı£© 
+//å¤§æ•°åŠ æ³•ã€å‡æ³•ã€ä¹˜æ³• ï¼ˆæ­£æ•°ï¼‰ 
 #include <iostream>
 #include <cmath>
 #include <string>
@@ -163,11 +163,11 @@ int main()
 	int len_a,len_b;
 	len_a=a.size();
 	len_b=b.size();
-	if(m=='+')			//¼Ó·¨ 
+	if(m=='+')			//åŠ æ³• 
 		c=Add(a,len_a,b,len_b);
-	else if(m=='-')		//¼õ·¨ 
+	else if(m=='-')		//å‡æ³• 
 		c=Subtra(a,len_a,b,len_b);
-	else if(m=='*')		//³Ë·¨ 
+	else if(m=='*')		//ä¹˜æ³• 
 		c=Multip(a,len_a,b,len_b);
 	else c="NULL";
 	cout<<c<<endl;
