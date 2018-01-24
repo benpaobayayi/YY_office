@@ -1,0 +1,25 @@
+//凯撒加密-数组 
+#include <iostream>
+#include <string.h>
+using namespace std;
+const int size=200;
+int main( )
+{
+	char msg[size],sec[size];
+	int i,len;
+	cin>>msg;
+	len=strlen(msg);
+	i=0;
+	while(i<len)
+	{
+		if(msg[i]<='z' && msg[i]>='a')
+			sec[i]=((msg[i]-'a')+4)%26+'a';
+		else if(msg[i]<='Z' && msg[i]>='A')
+			sec[i]=((msg[i]-'A')+4)%26+'A';
+		else sec[i]=msg[i];
+		++i;
+	}
+	sec[i]='\0';//人为添加字符串结束符 
+	cout<<sec<<endl;
+	return 0;
+} 
