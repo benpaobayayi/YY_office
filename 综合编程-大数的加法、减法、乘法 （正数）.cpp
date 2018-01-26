@@ -163,8 +163,13 @@ int main()
 	int len_a,len_b;
 	len_a=a.size();
 	len_b=b.size();
-	cout<<"a+b= "<<Add(a,len_a,b,len_b)<<endl;
-	cout<<"a-b= "<<Subtra(a,len_a,b,len_b)<<endl;
-	cout<<"a*b= "<<Multip(a,len_a,b,len_b)<<endl;
+	if(m=='+')			//加法 
+		c=Add(a,len_a,b,len_b);
+	else if(m=='-')		//减法 
+		c=Subtra(a,len_a,b,len_b);
+	else if(m=='*')		//乘法 
+		c=Multip(a,len_a,b,len_b);
+	else c="NULL";
+	cout<<c<<endl;
 	return 0;
 }
